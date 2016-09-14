@@ -1,0 +1,24 @@
+1063.0		Archaea	Euryarchaeota	Methanomicrobia	Methanomicrobiales	Methanoregulaceae	Methanoregulaceae_unclassified	1.46657	0.00041665865629	2550942
+34611.0		Archaea	Euryarchaeota	Methanomicrobia	Methanosarcinales	Methanosaetaceae	Methanosaeta	Methanosaeta_harundinacea	47.60586	0.0135250072143	2559043
+15259.0		Archaea	Euryarchaeota	Methanomicrobia	Methanosarcinales	Methanosaetaceae	Methanosaeta	Methanosaeta_concilii	17.85196	0.00507181115798	3008626
+17098.0		Bacteria	Proteobacteria	Deltaproteobacteria	Desulfuromonadales	Geobacteraceae	Geobacter	Geobacter_sulfurreducens	15.98768	0.00454215994201	3764200
+3516.0		Bacteria	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Lactobacillus	Lactobacillus_amylolyticus	8.0325	0.00228206298494	1540806
+2857.0		Bacteria	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Lactobacillus	Lactobacillus_fermentum	4.75109	0.00134980200194	2116954
+3076.0		Bacteria	Proteobacteria	Betaproteobacteria	Burkholderiales	Burkholderiaceae	Burkholderia	Burkholderia_unclassified	1.47768	0.000419815281276	7326103
+6.0		Viruses	Viruses_noname	Viruses_noname	Caudovirales	Siphoviridae	Siphoviridae_noname	Lactobacillus_phage_Lc_Nu	0.56326	0.000160025604097	37816
+501.0		Bacteria	Bacteroidetes	Bacteroidia	Bacteroidales	Prevotellaceae	Prevotella	Prevotella_paludivivens	0.5107	0.000145091753261	3455832
+285.0		Archaea	Euryarchaeota	Methanomicrobia	Methanomicrobiales	Methanoregulaceae	Methanolinea	Methanolinea_tarda	0.49002	0.000139217597104	2048009
+309.0		Bacteria	Firmicutes	Bacilli	Lactobacillales	Streptococcaceae	Lactococcus	Lactococcus_lactis	0.43224	0.00012280109293	2516916
+285.0		Archaea	Euryarchaeota	Methanobacteria	Methanobacteriales	Methanobacteriaceae	Methanobacterium	Methanobacterium_unclassified	0.39198	0.000111363681028	2558678
+214.0		Bacteria	Thermotogae	Thermotogae	Thermotogales	Thermotogaceae	Mesotoga	Mesotoga_prima	0.25363	7.205649229e-05	2974229
+160.0		Bacteria	Spirochaetes	Spirochaetia	Spirochaetales	Spirochaetaceae	Sphaerochaeta	Sphaerochaeta_unclassified	0.18483	5.25099768956e-05	3044871
+34611.0		Archaea	Euryarchaeota	Methanomicrobia	Methanosarcinales	Methanosaetaceae	Methanosaeta	Methanosaeta_harundinacea	GCF_000235565	47.60586	0.0135250072143	2559043
+15259.0		Archaea	Euryarchaeota	Methanomicrobia	Methanosarcinales	Methanosaetaceae	Methanosaeta	Methanosaeta_concilii	GCF_000204415	17.85196	0.00507181115798	3008626
+17098.0		Bacteria	Proteobacteria	Deltaproteobacteria	Desulfuromonadales	Geobacteraceae	Geobacter	Geobacter_sulfurreducens	Geobacter_sulfurreducens_unclassified	15.98768	0.00454215994201	3764200
+3516.0		Bacteria	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Lactobacillus	Lactobacillus_amylolyticus	GCF_000178475	8.0325	0.00228206298494	1540806
+2857.0		Bacteria	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Lactobacillus	Lactobacillus_fermentum	Lactobacillus_fermentum_unclassified	4.75109	0.00134980200194	2116954
+6.0		Viruses	Viruses_noname	Viruses_noname	Caudovirales	Siphoviridae	Siphoviridae_noname	Lactobacillus_phage_Lc_Nu	Lactobacillus_phage_Lc_Nu_unclassified	0.56326	0.000160025604097	37816
+501.0		Bacteria	Bacteroidetes	Bacteroidia	Bacteroidales	Prevotellaceae	Prevotella	Prevotella_paludivivens	GCF_000373185	0.5107	0.000145091753261	3455832
+285.0		Archaea	Euryarchaeota	Methanomicrobia	Methanomicrobiales	Methanoregulaceae	Methanolinea	Methanolinea_tarda	GCF_000235685	0.49002	0.000139217597104	2048009
+309.0		Bacteria	Firmicutes	Bacilli	Lactobacillales	Streptococcaceae	Lactococcus	Lactococcus_lactis	Lactococcus_lactis_unclassified	0.43224	0.00012280109293	2516916
+214.0		Bacteria	Thermotogae	Thermotogae	Thermotogales	Thermotogaceae	Mesotoga	Mesotoga_prima	GCF_000147715	0.25363	7.205649229e-05	2974229

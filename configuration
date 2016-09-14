@@ -1,0 +1,101 @@
+
+# ============================ Input file configuation ================================
+# load seqeunce directory
+dir_seq=/work/GoryaninU/golf/data/mfc_real
+
+
+# ========================== Program running parameter ================================
+# number of cpu
+cpu_max=24
+memory_max=120
+num_node=1
+
+# Running step // Please fill Yes or No (Y/N)
+step_0_check_quality=Y
+step_1_filtering=Y
+step_2_taxonomy_assigning=Y
+step_3_assembling=Y
+step_3_1_coassembling=N	
+step_4_gene_calling=Y
+step_5_annotating=Y
+display_result=Y
+
+
+# ============================ Output file configuration ==============================
+# output directory name
+dir_out=/work/GoryaninU/golf
+dir_out_qc=0_seq_qc
+dir_out_fread=1_seq_filtered
+dir_out_taxa=2_taxonomy
+dir_out_assem=3_assembled
+dir_out_co_assem=3_coassembled_2
+dir_out_bining=3_1_bining
+dir_out_cgene=4_gene_call
+dir_out_anno=5_annotation
+dir_out_reassembly=3_reassembled
+
+
+# ================ Program directory and parameters configuration ====================
+
+# Quality checking
+dir_fastqc=/apps/unit/GoryaninU/software/FastQC/fastqc
+
+
+# ---------- Trimming read configuration ---------------------------------------------
+dir_trimmomatic=/apps/unit/GoryaninU/software/filter/Trimmomatic-0.36/trimmomatic-0.36.jar
+# Config read trimming parameter
+p_trimming_LEADING=3            # Remove leading low quality or N bases (below quality 3) (LEADING:3)
+p_trimming_TRAILING=3           # Remove trailing low quality or N bases (below quality 3) (TRAILING:3)
+p_trimming_SLIDINGWINDOW=4:15   # Scan the read with a 4-base wide sliding window, cutting when the average quality per base drops below 15 (SLIDINGWINDOW:4:15)
+p_trimming_MINLEN=36            # Drop reads below the 36 bases long (MINLEN:36)
+
+
+# ---------- taxonomy assignment configuration ---------------------------------------
+dir_metaxa=/apps/unit/GoryaninU/software/taxonomy/Metaxa2_2.1.3/metaxa2
+dir_metaxa2_ttt=/apps/unit/GoryaninU/software/taxonomy/Metaxa2_2.1.3/metaxa2_ttt
+# config taxonomy parameter
+p_taxonomy_identity=0,60,70,75,85,90,97 # Sets the percent identity cutoff to be classified at a certain taxonomic level
+                                        # Order of the values is: Kingdom/Domain,Phylum,Class,Order,Family,Genus,Species
+                                        # Default values are: 0,60,70,75,85,90,97
+p_taxonomy_organism=a,b         # {b, bacteria; a, archaea; e, eukaryota; m, mitochondrial; c, chloroplast; A, all; o, other} : 
+                                # Profile set to use for the search (comma-separated), default is all
+p_taxonomy_match=5              # Number of sequence matches to consider for classification, default = 5
+# visualization configuration
+dir_krona_vis=/apps/unit/GoryaninU/software/visualization/KronaTools-2.6.1/bin/ktImportText
+p_taxonomy_level=7              # Taxonomic level for performing inference, Default is 7 (species level).
+                                # (1 = domain, 2 = phylum, 3 = class, 4 = order, 5 = family, 6 = genus, 7 = species)
+
+dir_MetaPhlAn=/apps/unit/GoryaninU/software/taxonomy/metaphlan2/metaphlan2.py
+export mpa_dir=/apps/unit/GoryaninU/software/taxonomy/metaphlan2/
+p_MPA_analysis_type=rel_ab      # Type of analysis to perform: 
+                                #  * rel_ab: profiling a metagenomes in terms of relative abundances
+                                #  * rel_ab_w_read_stats: profiling a metagenomes in terms of relative abundances and estimate the number of reads comming from each clade.
+                                #  * reads_map: mapping from reads to clades (only reads hitting a marker)
+                                #  * clade_profiles: normalized marker counts for clades with at least a non-null marker
+                                #  * marker_ab_table: normalized marker counts (only when > 0.0 and normalized by metagenome size if --nreads is specified)
+                                #  * marker_pres_table: list of markers present in the sample (threshold at 1.0 if not differently specified with --pres_th
+                                # [default 'rel_ab']
+
+
+# ---------- assembly configuration -------------------------------------------------
+dir_SPAdes=/apps/unit/GoryaninU/software/assembler/SPAdes-3.8.2/bin/metaspades.py
+dir_metaQuast=/apps/unit/GoryaninU/software/assembler/quast-4.1/metaquast.py
+
+# ---------- bining -----------------------------------------------------------------
+# dir_fq2fa=fq2fa.py
+# dir_MetaAnnotator=/apps/unit/GoryaninU/software/bining/MetaAnnotator/bin/MetaAnnotator
+# dir_MetaAnnotator_bin=/apps/unit/GoryaninU/software/bining/MetaAnnotator/bin/
+
+dir_MaxBin=/apps/unit/GoryaninU/software/bining/MaxBin-2.2/run_MaxBin.pl
+
+
+# ---------- Gene call tool --------------------------------------------------------
+dir_FragGeneScan=/apps/unit/GoryaninU/software/gene_calling/FragGeneScan1.30/FragGeneScan
+
+# ---------- Annotation tool -------------------------------------------------------
+dir_split_fasta=src/split_fasta.py
+nodes_num=38
+dir_InterProScan=/apps/unit/GoryaninU/software/annotation/interproscan-5.18-57.0/interproscan.sh
+
+dir_cognizer=/apps/unit/GoryaninU/software/annotation/cognizer_64bit/
+p_cognizer_evalue=-5            #the E-value threshold to be used for the similarity search [default = -5.0]
